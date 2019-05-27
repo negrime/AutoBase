@@ -49,19 +49,19 @@ type
     ToolBtnFind: TToolButton;
     ActClear: TAction;
     ToolBtnClear: TToolButton;
-    procedure FormCreate(Sender: TObject);      //+
-    procedure ExitbtnClick(Sender: TObject);   //+
-    procedure OpenbtnClick(Sender: TObject);    //+
-    procedure ClosebtnClick(Sender: TObject);   //+
-    procedure TreeClose(var canClose:Boolean);   //+
-    procedure SavebtnClick(Sender: TObject);    //+
-    procedure SaveasbtnClick(Sender: TObject);   //+
-    procedure NewbtnClick(Sender: TObject);  //+
-    procedure AddbtnClick(Sender: TObject); //++
-    procedure DeletebtnClick(Sender: TObject);  //+
-    procedure ClearbtnClick(Sender: TObject);  //+
-    procedure FindbtnClick(Sender: TObject);  //+
-    procedure DobtnClick(Sender: TObject);   //+
+    procedure FormCreate(Sender: TObject);
+    procedure ExitbtnClick(Sender: TObject);  
+    procedure OpenbtnClick(Sender: TObject);
+    procedure ClosebtnClick(Sender: TObject);
+    procedure TreeClose(var canClose:Boolean);
+    procedure SavebtnClick(Sender: TObject);
+    procedure SaveasbtnClick(Sender: TObject);
+    procedure NewbtnClick(Sender: TObject);
+    procedure AddbtnClick(Sender: TObject);
+    procedure DeletebtnClick(Sender: TObject);
+    procedure ClearbtnClick(Sender: TObject);
+    procedure FindbtnClick(Sender: TObject);
+    procedure DobtnClick(Sender: TObject);
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
   private
     Tree:TTrieGUI;
@@ -93,7 +93,7 @@ begin
   end;
 end;
 
-procedure TFmMain.ExitbtnClick(Sender: TObject); //+
+procedure TFmMain.ExitbtnClick(Sender: TObject);
 begin
   Closebtn.Click;
 end;
@@ -114,7 +114,7 @@ begin
       end;
 end;
 
-procedure TFmMain.ClosebtnClick(Sender: TObject);    //+
+procedure TFmMain.ClosebtnClick(Sender: TObject);
 var
   CanClose:Boolean;
 begin
@@ -127,7 +127,7 @@ begin
   end;
 end;
 
-procedure TFmMain.TreeClose(var CanClose: Boolean);    //+
+procedure TFmMain.TreeClose(var CanClose: Boolean);
 begin
   Canclose:=True;
   if (Tree<>nil) and (Tree.Modified)then
@@ -147,7 +147,7 @@ begin
   end;
 end;
 
-procedure TFmMain.SavebtnClick(Sender: TObject); //+
+procedure TFmMain.SavebtnClick(Sender: TObject);
 begin
   if Tree.Filename = '' then
     SaveAsbtn.Click
@@ -155,14 +155,14 @@ begin
     Tree.SaveFile;
 end;
 
-procedure TFmMain.SaveasbtnClick(Sender: TObject); //+
+procedure TFmMain.SaveasbtnClick(Sender: TObject);
 begin
   SaveDialog.FileName:=Tree.Filename;
   if SaveDialog.Execute then
     Tree.SaveToFile(SaveDialog.FileName);
 end;
 
-procedure TFmMain.NewbtnClick(Sender: TObject); //+
+procedure TFmMain.NewbtnClick(Sender: TObject);
 begin
   if Tree <> nil then
     Closebtn.Click;
@@ -173,7 +173,7 @@ begin
     end;
 end;
 
-procedure TFmMain.AddbtnClick(Sender: TObject); //+
+procedure TFmMain.AddbtnClick(Sender: TObject);
 var
   temp,inp_str:string;
   i,len,CountWords:Integer;
@@ -203,7 +203,7 @@ begin
     then Tree.PrintAll(memoIn.Lines);
 end;
 
-procedure TFmMain.FormCreate(Sender: TObject);    //+
+procedure TFmMain.FormCreate(Sender: TObject);
 begin
   Tree:=nil;
   Application.OnIdle:=MyIdle;
@@ -211,7 +211,7 @@ begin
   SaveDialog.InitialDir:=OpenDialogIn.InitialDir;
 end;
 
-procedure TFmMain.DeletebtnClick(Sender: TObject);   //+
+procedure TFmMain.DeletebtnClick(Sender: TObject);
 var
   word:string;
 begin

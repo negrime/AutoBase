@@ -14,19 +14,19 @@ type
       FNext: array [TIndex] of TNode;
       function GetAllWordsCount: Integer;
     protected
-      function GetNext (ch: TIndex): TNode; //+
-      procedure SetNext(ch:TIndex; value:TNode); //+
+      function GetNext (ch: TIndex): TNode;
+      procedure SetNext(ch:TIndex; value:TNode);
     public
-      constructor Create;  //+
-      destructor Destroy; override; //+
-      function IsCorrectChar(ch:char):boolean; //+
-      function IsEmpty:boolean;      //+
-      function AddWord(var wrd: string; i:integer):boolean;    //+
-      function FindWord (var wrd: string; i:integer): boolean;  //+
-      function DeleteWord (var wrd: string; i:integer): boolean;    //+
-      procedure PrintAll (SL:Tstrings; var wrd:string);   //+
-      procedure SaveToFile(var f: TextFile; word:string);   //+
-      function GetWordsCount: integer;     //+
+      constructor Create;
+      destructor Destroy; override;
+      function IsCorrectChar(ch:char):boolean;
+      function IsEmpty:boolean;
+      function AddWord(var wrd: string; i:integer):boolean;
+      function FindWord (var wrd: string; i:integer): boolean;
+      function DeleteWord (var wrd: string; i:integer): boolean;
+      procedure PrintAll (SL:Tstrings; var wrd:string);
+      procedure SaveToFile(var f: TextFile; word:string);
+      function GetWordsCount: integer;
       property Point:boolean read Fpoint write FPoint;
       property Next[index:TIndex]:TNode read GetNext write SetNext;
   end;

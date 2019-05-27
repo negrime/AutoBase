@@ -9,16 +9,16 @@ type
     FFileName:string;
     FModified:Boolean;
   public
-    constructor Create;     //+
-    destructor Destroy; override;    //+
-    function LoadFromFile (AFileName : string):boolean;  //+
-    procedure SaveToFile (AFileName:string);   //+
-    procedure SaveFile;  //+
-    procedure Clear;     //+
-    function AddWord (word : string):boolean;   //+
-    function DeleteWord (word : string ):boolean;    //+
-    property Filename : string  read FFileName;  //+
-    property Modified : Boolean read FModified; //+
+    constructor Create; 
+    destructor Destroy; override;
+    function LoadFromFile (AFileName : string):boolean;
+    procedure SaveToFile (AFileName:string);
+    procedure SaveFile;
+    procedure Clear;
+    function AddWord (word : string):boolean;
+    function DeleteWord (word : string ):boolean;
+    property Filename : string  read FFileName;
+    property Modified : Boolean read FModified;
   end;
 
 implementation

@@ -25,3 +25,12 @@ C:\Users\scorp\Desktop\AutoBase\AutoBase\obj\Debug\BankService.pdb
 \\Mac\Home\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\AutoBase.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\BankService.exe
 \\Mac\Home\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\BankService.pdb
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\bin\Debug\BankService.exe
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\bin\Debug\BankService.pdb
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\AutoBase.csprojAssemblyReference.cache
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\AutoBase.MainForm.resources
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\BankService.Properties.Resources.resources
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\AutoBase.csproj.GenerateResource.cache
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\AutoBase.csproj.CoreCompileInputs.cache
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\BankService.exe
+C:\Users\scorp\Desktop\GIT\AutoBase\AutoBase\AutoBase\obj\Debug\BankService.pdb

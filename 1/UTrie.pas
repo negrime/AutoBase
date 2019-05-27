@@ -7,19 +7,19 @@ type
   private
     FRoot : TNode;
   public
-    constructor Create; //+
-    destructor Destroy; override;    //+
-    function AddWord (word : string):boolean; //+
-    function DeleteWord(word:string):boolean;  //+
-    function FindWord (word : string ):boolean; //+
-    procedure PrintAll (SL : TStrings);  //+
-    function LoadFromFile(AFileName: string):boolean;   //+
-    procedure SaveToFile (AFileName : string); //+
-    function IsEmpty:boolean; //+
-    procedure Clear; //+
+    constructor Create;
+    destructor Destroy; override;
+    function AddWord (word : string):boolean;
+    function DeleteWord(word:string):boolean;
+    function FindWord (word : string ):boolean;
+    procedure PrintAll (SL : TStrings);
+    function LoadFromFile(AFileName: string):boolean;
+    procedure SaveToFile (AFileName : string);
+    function IsEmpty:boolean;
+    procedure Clear;
     function GetWordsCount:integer;
   end;
-  function IsCorrectWord (var wrd : string) : boolean;  //+
+  function IsCorrectWord (var wrd : string) : boolean; 
 
 implementation
 constructor TTrie.Create;
