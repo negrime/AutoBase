@@ -100,6 +100,7 @@ end;
 
 procedure TFmMain.OpenbtnClick(Sender: TObject);
 begin
+
    if OpenDialogIn.Execute then
       begin
         if Tree <> nil

@@ -8,3 +8,13 @@ C:\Users\scorp\Desktop\lab2\lab2\bin\Debug\lab2.exe
 C:\Users\scorp\Desktop\lab2\lab2\bin\Debug\lab2.pdb
 C:\Users\scorp\Desktop\lab2\lab2\obj\Debug\lab2.exe
 C:\Users\scorp\Desktop\lab2\lab2\obj\Debug\lab2.pdb
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\bin\Debug\lab2.exe.config
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\bin\Debug\lab2.exe
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\bin\Debug\lab2.pdb
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.Form1.resources
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.Properties.Resources.resources
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.exe
+\\Mac\Home\Desktop\GIT\AutoBase\lab2\lab2\obj\Debug\lab2.pdb
