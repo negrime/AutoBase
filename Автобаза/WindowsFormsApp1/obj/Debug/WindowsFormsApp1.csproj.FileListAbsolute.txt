@@ -1,0 +1,50 @@
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\Hospital.Form1.resources
+D:\учеба\2 курс\c#\2 семестр\Больница\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\Hospital.Form1.resources
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\учеба\2 курс\c#\2 семестр\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\Hospital.Form1.resources
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\учеба\2 курс\c#\Больница мвс\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\Hospital.Form1.resources
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\scorp\Desktop\Больница\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\AutoBase.Form1.resources
