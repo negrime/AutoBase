@@ -38,7 +38,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.start = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
             this.actionsBox = new System.Windows.Forms.ListBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +59,6 @@
             this.panel.Controls.Add(this.pictureBox7);
             this.panel.Controls.Add(this.start);
             this.panel.Controls.Add(this.stop);
-            this.panel.Controls.Add(this.buttonAdd);
             this.panel.Controls.Add(this.actionsBox);
             this.panel.Controls.Add(this.pictureBox13);
             this.panel.Controls.Add(this.label1);
@@ -98,7 +96,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(356, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 30);
+            this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 23;
             this.label3.Text = "Wheel";
             // 
@@ -109,7 +107,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(187, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 30);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 22;
             this.label2.Text = "Razval";
             // 
@@ -128,9 +126,9 @@
             this.start.Enabled = false;
             this.start.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.start.ForeColor = System.Drawing.Color.Navy;
-            this.start.Location = new System.Drawing.Point(889, 10);
+            this.start.Location = new System.Drawing.Point(888, 10);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(158, 35);
+            this.start.Size = new System.Drawing.Size(158, 71);
             this.start.TabIndex = 19;
             this.start.Text = "Возобновить";
             this.start.UseVisualStyleBackColor = true;
@@ -140,41 +138,28 @@
             // 
             this.stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.stop.ForeColor = System.Drawing.Color.Navy;
-            this.stop.Location = new System.Drawing.Point(889, 78);
+            this.stop.Location = new System.Drawing.Point(888, 125);
             this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(158, 35);
+            this.stop.Size = new System.Drawing.Size(158, 71);
             this.stop.TabIndex = 18;
             this.stop.Text = "Приостановить";
             this.stop.UseVisualStyleBackColor = true;
             this.stop.Click += new System.EventHandler(this.stop_Click);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.Navy;
-            this.buttonAdd.Location = new System.Drawing.Point(889, 133);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(158, 76);
-            this.buttonAdd.TabIndex = 17;
-            this.buttonAdd.Text = "Добавить клиента";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // actionsBox
             // 
             this.actionsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionsBox.FormattingEnabled = true;
             this.actionsBox.HorizontalScrollbar = true;
-            this.actionsBox.ItemHeight = 26;
-            this.actionsBox.Location = new System.Drawing.Point(529, 10);
+            this.actionsBox.Location = new System.Drawing.Point(565, 10);
             this.actionsBox.Name = "actionsBox";
-            this.actionsBox.Size = new System.Drawing.Size(354, 186);
+            this.actionsBox.Size = new System.Drawing.Size(320, 186);
             this.actionsBox.TabIndex = 16;
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(0, 405);
+            this.pictureBox13.Location = new System.Drawing.Point(-22, 405);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(97, 103);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -188,7 +173,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(40, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 30);
+            this.label1.Size = new System.Drawing.Size(29, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "TO";
             // 
@@ -231,7 +216,6 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Button stop;
-        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ListBox actionsBox;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.PictureBox pictureBox7;

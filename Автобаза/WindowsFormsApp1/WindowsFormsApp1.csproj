@@ -101,9 +101,6 @@
     <None Include="maindoc.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="woman.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\doctor.png" />
   </ItemGroup>
   <ItemGroup>

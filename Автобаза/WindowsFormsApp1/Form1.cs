@@ -21,7 +21,7 @@ namespace AutoBase
             InitializeComponent();
             control = Controller.getInstance(panel, actionsBox);
             tick = 0;
-            time = 2;
+            time = 0;
 
             timer.Start();
         }
@@ -45,14 +45,6 @@ namespace AutoBase
             start.Enabled = true;
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-
-            // timer.Interval = rnd.Next(2, 5) * 1000;
-            
-             //timer.Enabled = true;
-            //    timer.Tick += timer_Tick;
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -71,6 +63,7 @@ namespace AutoBase
             {
                 control.Add();
                 tick = 0;
+                time = rnd.Next(2, 5);
             }
 
         }

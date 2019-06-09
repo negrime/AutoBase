@@ -58,3 +58,13 @@ C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\AutoBase.Form
 \\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 \\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\AutoBase.Form1.resources
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\scorp\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

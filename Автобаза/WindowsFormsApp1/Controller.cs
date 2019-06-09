@@ -8,13 +8,14 @@ namespace AutoBase
 {
     internal class Controller
     {
-        private static Controller instance;
+        public static Controller instance;
 
         private List<PictureBox> clientPics = new List<PictureBox>();
         private Panel panel; // Панель модели
         private ListBox messageBox; // Список очереди и сообщений
         private Model m;
         private ManualResetEvent mre;
+        int LastRight = 80;
         // Конструктор
         internal Controller(Panel _panel, ListBox _messageBox)
         {
@@ -22,7 +23,7 @@ namespace AutoBase
             messageBox = _messageBox;
             mre = new ManualResetEvent(false);
             mre.Set();
-            m = new Model();
+            m = Model.GetModel();
             m.OnMove += Move;
 
             m.OnPrintState += PrintState;
@@ -62,7 +63,62 @@ namespace AutoBase
             m.AddClient();
             m.AddStart();  
         }
-        
+
+        public void Work()
+        {
+            Client client = m.AddClient();
+            int num = m.clients.IndexOf(client);
+            int finalX;
+            lock ((object)LastRight)
+            {
+                m.Move(num, LastRight, 435, 7); //cтавим в конец
+
+                Thread.Sleep(1000);     //5000    
+                switch ((int)client.breakage.breakageType)
+                {
+                    case 0:
+                        finalX = 90;
+                        break;
+                    case 1:
+                        finalX = 265;
+                       m.Reverse(num);
+                        break;
+                    case 2:
+                        finalX = 430;
+                        m.Reverse(num);
+                        break;
+                    case 3:
+                        finalX = 597;
+                        m.Reverse(num);
+                        break;
+                    default:
+                        finalX = 90;
+                        break;
+
+                }
+                m.Move(num, finalX, 130, 7);
+            }
+
+            //заходим в сервис(поднимаемся вверх)
+            m.Move(num, finalX, 50, 7);
+            //и налево
+            m.Move(num, finalX - 65, 50, 7);
+            m.Reverse(num);
+            Random rand = new Random();
+            int period = rand.Next(1500, 4000);
+            bool success = rand.Next() % 2 == 0;
+            List<string> messages = new List<string>();
+            messages = success ? client.breakage.SuccessMessages : client.breakage.FailMessages;
+            Thread.Sleep(period);
+            m.PrintState(num, messages);
+
+            // Отправляем в закат
+            m.Move(num, 1200, 350, 7);
+
+        }
+
+
+
         //движение объекта как такового
         public void MoveClient(PictureBox picture, int finalX, int finalY, int Delay)
         {

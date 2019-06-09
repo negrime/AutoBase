@@ -48,6 +48,7 @@ namespace AutoBase
 
     class Model
     {
+        private static Model model;
         public event EventHandler OnSetImage;
 
         public event EventHandler OnPrintState;
@@ -60,20 +61,24 @@ namespace AutoBase
 
         public List<Client> clients; //список клиентов
         private List<Thread> threads; //список потоков клиентов
-        private ManualResetEvent mreReg, mreRef; 
-        private int LastRight;
+        private ManualResetEvent mreReg; 
         private int ind;
 
         public Model()
         {
             mreReg = new ManualResetEvent(true);
-            mreRef = new ManualResetEvent(true);
             threads = new List<Thread>();
             clients = new List<Client>();
-            LastRight = 20;
+            LastRight = 80;
             ind = -1;
         }
        
+        public static Model GetModel()
+        {
+            if (model == null)
+                model = new Model();
+            return model;
+        }
         public void Exit()
         {
             foreach (Thread t in threads)
@@ -92,9 +97,6 @@ namespace AutoBase
         {
             OnReverseBack?.Invoke(this, new PatientImageEventArgs(num));
         }
-
-
-     
 
         internal Client AddClient()
         {
@@ -124,74 +126,7 @@ namespace AutoBase
         
         public void Work()
         {
-            Client client = AddClient();
-            int num = clients.IndexOf(client);
-            bool IsRegistrated = false;
-            int finalX;
-            lock ((object)LastRight)
-            {
-                LastRight += 90;
-                Move(num, LastRight, 435, 7); //cтавим в конец
-                mreReg.WaitOne();   //ждет пока первый не уйдет
-                while (!IsRegistrated)
-                {
-                    mreReg.WaitOne();
-                    if (client.picture.Location.X <= 90)   //если он первый
-                    {
-                        mreReg.Reset();
-                        LastRight -= 90;
-                        //блокируем остальные потоки если клиент стоит первым
-                     ///  Thread.Sleep(1000);     //5000    
-                        IsRegistrated = true;
-                    }
-                    else
-                    {
-                        mreReg.WaitOne();
-                        Move(num, client.picture.Location.X - 7, 435, 7);
-                    }
-                }
-
-                switch ((int)client.breakage.breakageType)
-                {
-                    case 0:
-                        finalX = 90;
-                        break;
-                    case 1:
-                        finalX = 265;
-                        Reverse(num);
-                        break;
-                    case 2:
-                        finalX = 430;
-                        Reverse(num);
-                        break;
-                    case 3:
-                        finalX = 597;
-                        Reverse(num);
-                        break;
-                    default:
-                        finalX = 90;
-                        break;
-
-                }
-                Move(num, finalX, 130, 7);
-            }
-            
-            mreReg.Set();//запускаем движение очереди 
-            //заходим в сервис(поднимаемся вверх)
-            Move(num, finalX, 50, 7);
-            //и налево
-            Move(num, finalX - 65, 50, 7);
-            Reverse(num);
-            Random rand = new Random();
-            int period = rand.Next(1500, 4000);
-            bool success = rand.Next() % 2 == 0;
-            List<string> messages = new List<string>();
-            messages = success ? client.breakage.SuccessMessages : client.breakage.FailMessages;
-            Thread.Sleep(period);
-            PrintState(num, messages);
-  
-            // Отправляем в закат
-            Move(num, 1200, 350, 7);
+            Controller.instance.Work();
 
         }
 
@@ -211,6 +146,7 @@ namespace AutoBase
         }
         
     }
+
 
    
 }
