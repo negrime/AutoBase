@@ -59,7 +59,7 @@ namespace AutoBase
         //добавление клиента
         internal void Add()
         {
-            m.AddPatient();
+            m.AddClient();
             m.AddStart();  
         }
         
@@ -87,8 +87,8 @@ namespace AutoBase
         private  void NewPicture(object sender, EventArgs args)
         {
             PatientImageEventArgs imgArgs = (PatientImageEventArgs)args;
-            Client patient = m.patients[imgArgs.num];
-            PictureBox img=new PictureBox();
+            Client patient = m.clients[imgArgs.num];
+            PictureBox img = new PictureBox();
             if (patient.car is Truck)
             {
                img.Image = AutoBase.Properties.Resources.truck;
@@ -105,7 +105,7 @@ namespace AutoBase
                 SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
             };
             panel.Invoke((Action)(() => panel.Controls.Add(box)));
-            m.patients[imgArgs.num].picture = box;
+            m.clients[imgArgs.num].picture = box;
             clientPics.Add(box);
         }
 
@@ -132,7 +132,7 @@ namespace AutoBase
         {
             PatientImageEventArgs imgArgs = (PatientImageEventArgs)args;
             Bitmap img;
-            Client client = m.patients[imgArgs.num];
+            Client client = m.clients[imgArgs.num];
             if (client.car is Truck)
             {
                img = AutoBase.Properties.Resources.truck ;

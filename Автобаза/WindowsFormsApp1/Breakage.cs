@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace AutoBase
 {
-    //вид болезни
-    //Surgeon, Dentist, Pediatrician, Traumatologist
+    //услуги
     public enum BreakageType {to, razval, wheel }
-    //паттерн Singltone
     public abstract class Breakage
     {
         public double price { get; protected set; }
@@ -39,9 +37,9 @@ namespace AutoBase
         {
             breakageType = BreakageType.to;
         }
+
         public override List<string> SuccessMessages
         {
-            
             get
             {
                 return new List<string>
@@ -61,10 +59,10 @@ namespace AutoBase
             {
                 return new List<string>
                 {
-                    "Получение сведений о  пациенте...",
-                    "Осмотр горла...",
-                    "Проверка дыхания...",
-                    "Пациенту следует продлить больничный!"
+                    "Первичный осмотр автомобиля...",
+                    "Проводим техническое обслуживание...",
+                    "Пожалуйста, подождите...",
+                    "Что то пошло не так! Выполнить ТО не удалось."
                 };
             }
         }
@@ -97,10 +95,10 @@ namespace AutoBase
             {
                 return new List<string>
                 {
-                    "Получение сведений о  пациенте...",
-                    "Осмотр горла...",
-                    "Проверка дыхания...",
-                    "Пациенту следует продлить больничный!"
+                    "Осмотр автомобиля",
+                    "Проводим развал схождения",
+                    "Пожалуйста, подождите",
+                    "Недостаточно механиков! Услуга не выполнена."
                 };
             }
         }
@@ -133,10 +131,10 @@ namespace AutoBase
             {
                 return new List<string>
                 {
-                    "Получение сведений о  пациенте...",
-                    "Осмотр горла...",
-                    "Проверка дыхания...",
-                    "Пациенту следует продлить больничный!"
+                    "Осмотр автомобиля...",
+                    "Найдено пробитое колесо...",
+                    "Попытка замены...",
+                    "Простите, но нужного запасного колеса нет!"
                 };
             }
         }

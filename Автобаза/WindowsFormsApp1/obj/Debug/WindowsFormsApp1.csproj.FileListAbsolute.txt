@@ -48,3 +48,13 @@ C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsA
 C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\scorp\Desktop\Автобаза\WindowsFormsApp1\obj\Debug\AutoBase.Form1.resources
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\AutoBase.Form1.resources
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\Hospital.Properties.Resources.resources
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+\\Mac\Home\Desktop\GIT\AutoBase\Автобаза\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -12,11 +12,18 @@ namespace AutoBase
 {
     public partial class Form1 : Form
     {
-       private Controller control;
+        private Controller control;
+        private int tick, time;
+        Random rnd = new Random();
+
         public Form1()
         {
             InitializeComponent();
             control = Controller.getInstance(panel, actionsBox);
+            tick = 0;
+            time = 2;
+
+            timer.Start();
         }
 
         private void start_Click(object sender, EventArgs e)
@@ -40,7 +47,11 @@ namespace AutoBase
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            control.Add();
+
+            // timer.Interval = rnd.Next(2, 5) * 1000;
+            
+             //timer.Enabled = true;
+            //    timer.Tick += timer_Tick;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -53,6 +64,15 @@ namespace AutoBase
             control.Exit();
         }
 
-       
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            tick++;
+            if (tick > time)
+            {
+                control.Add();
+                tick = 0;
+            }
+
+        }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AutoBase
 {
-    //для движение пациентов
+    //для движения клиентов
     class MoveEventArgs : EventArgs
     {
         public int who { get; }
@@ -58,24 +58,20 @@ namespace AutoBase
 
         public event EventHandler OnReverseBack;
 
-        public List<Client> patients; //список пациентов
-        private List<Thread> threads; //список потоков пациентов
+        public List<Client> clients; //список клиентов
+        private List<Thread> threads; //список потоков клиентов
         private ManualResetEvent mreReg, mreRef; 
-        private int LastRight, LastLeft;
+        private int LastRight;
         private int ind;
-        public int firstInd, firstIndRef;
 
         public Model()
         {
             mreReg = new ManualResetEvent(true);
             mreRef = new ManualResetEvent(true);
             threads = new List<Thread>();
-            patients = new List<Client>();
+            clients = new List<Client>();
             LastRight = 20;
-            LastLeft = 680;
             ind = -1;
-            firstInd = 0;
-            firstIndRef = 0;
         }
        
         public void Exit()
@@ -86,7 +82,6 @@ namespace AutoBase
                     t.Abort();
                 }
                 catch (Exception) { }
-
         }
 
         public void Reverse(int num)
@@ -101,13 +96,13 @@ namespace AutoBase
 
      
 
-        internal Client AddPatient()
+        internal Client AddClient()
         {
             ind++;
-            Client patient = new Client();
-            patients.Add(patient);
+            Client client = new Client();
+            clients.Add(client);
             SetImage(ind);
-            return patient;
+            return client;
         }
 
         internal void AddStart()
@@ -129,40 +124,35 @@ namespace AutoBase
         
         public void Work()
         {
-            Client patient = AddPatient();
-            int num = patients.IndexOf(patient);
+            Client client = AddClient();
+            int num = clients.IndexOf(client);
             bool IsRegistrated = false;
             int finalX;
-            bool IsReversed;
             lock ((object)LastRight)
             {
-                LastRight += 70;
+                LastRight += 90;
                 Move(num, LastRight, 435, 7); //cтавим в конец
                 mreReg.WaitOne();   //ждет пока первый не уйдет
                 while (!IsRegistrated)
                 {
                     mreReg.WaitOne();
-                    if (patient.picture.Location.X <= 90)   //если он первый
+                    if (client.picture.Location.X <= 90)   //если он первый
                     {
                         mreReg.Reset();
-                        LastRight -= 70;
-                        //блокируем остальные потоки если пациент стоит первым
-                       //Thread.Sleep(5000);     //5000    
+                        LastRight -= 90;
+                        //блокируем остальные потоки если клиент стоит первым
+                     ///  Thread.Sleep(1000);     //5000    
                         IsRegistrated = true;
                     }
                     else
                     {
                         mreReg.WaitOne();
-                        Move(num, patient.picture.Location.X - 7, 435, 7);
+                        Move(num, client.picture.Location.X - 7, 435, 7);
                     }
                 }
-                
-                //идем на регистрацию
-                //  MovePatient(patient, 90, 435);
-                //идем к нужному кабинету
-                switch ((int)patient.breakage.breakageType)
+
+                switch ((int)client.breakage.breakageType)
                 {
-                    //Surgeon, Dentist, Pediatrician, Traumatologist
                     case 0:
                         finalX = 90;
                         break;
@@ -185,12 +175,9 @@ namespace AutoBase
                 }
                 Move(num, finalX, 130, 7);
             }
-            IsReversed = (finalX> 90);
             
             mreReg.Set();//запускаем движение очереди 
-            if (IsReversed)
-                Reverse(num);
-            //заходим в кабинет(поднимаемся вверх)
+            //заходим в сервис(поднимаемся вверх)
             Move(num, finalX, 50, 7);
             //и налево
             Move(num, finalX - 65, 50, 7);
@@ -199,17 +186,9 @@ namespace AutoBase
             int period = rand.Next(1500, 4000);
             bool success = rand.Next() % 2 == 0;
             List<string> messages = new List<string>();
-            messages = success ? patient.breakage.SuccessMessages : patient.breakage.FailMessages;
+            messages = success ? client.breakage.SuccessMessages : client.breakage.FailMessages;
             Thread.Sleep(period);
             PrintState(num, messages);
-            //разворачиваем пациента
-            if (IsReversed) 
-                Reverse(num);
-            //идем за справкой
-        //    Move(num, finalX, 50, 7);
-          //  Move(num, finalX, 130, 7);
-            bool IsReferenced = false;
-
   
             // Отправляем в закат
             Move(num, 1200, 350, 7);
@@ -226,7 +205,7 @@ namespace AutoBase
             List<string> strMes = new List<string>();
             foreach (string s in messages)
             {
-                strMes.Add(string.Format("Номер автомобиля: {0}: {1}", patients[num].car.number, s));
+                strMes.Add(string.Format("Номер автомобиля: {0}: {1}", clients[num].car.number, s));
             };
             return strMes;
         }

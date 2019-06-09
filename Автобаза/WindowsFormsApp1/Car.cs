@@ -8,13 +8,13 @@ using System.Windows.Forms;
 
 namespace AutoBase
 {
-    //класс пациент
+    //класс клиент
     public  class Client
     {
         public Car car;
         protected Random rand = new Random();
-        public PictureBox picture { get; set; } //изображение пациента(нужно хранить в классе для очереди)
-        public Breakage breakage { get; set; }//вид болезни
+        public PictureBox picture { get; set; } //изображение клиента(нужно хранить в классе для очереди)
+        public Breakage breakage { get; set; }//вид нужной услуги
 
         public Client()
         {
@@ -32,7 +32,7 @@ namespace AutoBase
     public abstract class Car
     {
         protected Random rand = new Random();
-        public int number { get; set; } //номер страхового полиса
+        public int number { get; set; } //номер машины 
         public string brand { get; set; }
         abstract public void Generate();
     }
@@ -41,7 +41,7 @@ namespace AutoBase
     {
         public bool isAWD { get; set; } // полный привод
         public Passanger() : base() { }
-        //рандомная генерация заполнения полей
+     
         public override void Generate()
         {
             number = rand.Next(101, 499);
@@ -55,7 +55,7 @@ namespace AutoBase
         public int tonnage { get; set; }// грузоподъемность
         public Truck() : base()
         {}
-        //рандомная генерация заполнения полей
+
         public override void Generate()
         {
             number = rand.Next(500, 1000);
